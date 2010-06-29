@@ -53,6 +53,7 @@ highlight SpecialKey guifg=#4a4a59
 " Allow list to be toggled easily
 nmap <leader>l :set list!<CR>
 
+nnoremap <leader>d :NERDTreeToggle<cr>
 
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
