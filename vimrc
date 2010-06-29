@@ -29,7 +29,7 @@ set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
 set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
+set nohlsearch                    " Don't continue to highlight matches.
 
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
