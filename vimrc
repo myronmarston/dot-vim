@@ -44,7 +44,7 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
 
 set list                          " Show hidden characters (tab and eol)
-set listchars=tab:▸\ ,eol:¬       " Use the same chars as textmate.
+set listchars=trail:⋅,nbsp:⋅,tab:▸\ ,eol:¬       " Use the same chars as textmate.
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
