@@ -97,6 +97,9 @@ map <Leader>f :FuzzyFinderTextMate<Enter>
 
 let g:bufExplorerShowRelativePath=1 " use relative paths for buffer explorer
 
+map <leader>  :TlistToggle<cr>
+
+let Tlist_GainFocus_On_ToggleOpen=1 " gain focus when the tag list is shown
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
