@@ -8,7 +8,7 @@ function! BDD(args)
    echo "don't know how to BDD this file"
  end
 endfunction
- 
+
 function! RunTest(args)
   let cursor = matchstr(a:args, '\d\+')
   if cursor
@@ -25,7 +25,7 @@ function! RunTest(args)
   end
   execute cmd
 endfunction
- 
+
 function! RunSpec(args)
   if exists("b:rails_root") && filereadable(b:rails_root . "/script/spec")
     let spec = b:rails_root . "/script/spec"
@@ -35,12 +35,10 @@ function! RunSpec(args)
   let cmd = ":! " . spec . " % -cfn -b " . a:args
   execute cmd
 endfunction
- 
-map !s :call BDD("-l " . <C-r>=line('.')<CR>)
-map !S :call BDD("")
 
 " Mappings
 " run one rspec example or describe block based on cursor position
-map !s :call RunSpec("-l " . <C-r>=line('.')<CR>)
+map !s :call BDD("-l " . <C-r>=line('.')<CR>)
 " run full rspec file
-map !S :call RunSpec("")
+map !S :call BDD("")
+
