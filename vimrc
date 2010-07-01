@@ -101,6 +101,10 @@ map <leader>c :TlistToggle<cr>
 
 let Tlist_GainFocus_On_ToggleOpen=1 " gain focus when the tag list is shown
 
+" Make it easy to edit and reload vimrc file
+:nmap <Leader>r :source $MYVIMRC<cr>
+:nmap <Leader>e :e $MYVIMRC<cr>
+
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
