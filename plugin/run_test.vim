@@ -32,7 +32,7 @@ function! RunSpec(args)
   else
     let spec = "spec"
   end
-  let cmd = ":! " . spec . " % -cfn -b " . a:args
+  let cmd = ":! " . spec . " % -cfn -b -u" . a:args
   execute cmd
 endfunction
 
