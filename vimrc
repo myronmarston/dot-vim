@@ -94,6 +94,9 @@ map <leader>tm :tabmove
 
 " Uncomment to use Jamis Buck's file opening plugin
 map <Leader>f :FuzzyFinderTextMate<Enter>
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 125
+let g:fuzzy_ceiling = 50000
 
 let g:bufExplorerShowRelativePath=1 " use relative paths for buffer explorer
 
