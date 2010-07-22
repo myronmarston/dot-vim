@@ -108,6 +108,17 @@ let Tlist_GainFocus_On_ToggleOpen=1 " gain focus when the tag list is shown
 :nmap <Leader>r :source $MYVIMRC<cr>
 :nmap <Leader>e :e $MYVIMRC<cr>
 
+" Disable the arrow keys to get myself out of the habit of using them rather
+" then the hjkl keys.
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
