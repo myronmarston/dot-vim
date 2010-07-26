@@ -119,9 +119,13 @@ noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
 
+" Keep text selected after shifting it left or right.
 vmap < <gv
 vmap > >gv
 
+" Allow tab to be used for autocompletion
+imap <Tab> <C-N>
+imap <S-Tab> <C-P>
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
