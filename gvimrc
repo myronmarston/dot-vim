@@ -10,4 +10,4 @@ set lines=60 columns=180          " Window dimensions.
 
 set guioptions-=r                 " Don't show right scrollbar
 
-
+colorscheme underwater-mod
